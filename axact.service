@@ -1,0 +1,11 @@
+[Unit]
+Description=Axact is a rust application, shows system info on the web.
+After=network.target
+
+[Service]
+WorkingDirectory=/root/axact
+ExecStart=/root/axact/target/release/axact
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
